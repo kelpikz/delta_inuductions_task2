@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+  <link rel="stylesheet" href="./stylesheet/index.css">
+</head>
+
+<body>
+
+  <canvas width="500" height="500" id="canvas" style=" display: none;border: solid 1px black;"></canvas>
+
+
+  <div id="newBarChart">
+    <h1>Create a new Chart</h1>
+    <label>Name :
+      <input type="text" id="graphName">
+    </label>
+    <table>
+      <tr>
+        <th>S No</th>
+        <th>Label</th>
+        <th>Value</th>
+        <th>Delete</th>
+      </tr>
+      <tr>
+        <td class="sno">1</td>
+        <td contenteditable="true" class="barLabel"></td>
+        <td contenteditable="true" class="barValue"></td>
+        <td><button class="danger" onclick="deleteRow(1)">Delete</button></td>
+      </tr>
+      </tr>
+    </table>
+    <button class="create" onclick="newRow()">Add New Row</button>
+    <button class="success" onclick="createChart()">Create Chart</button>
+
+  </div>
+
+  <h1 class="chartName">Chart Name</h1>
+  <div id="content">
+
+
+    <div id="yAxisLabel">
+      <div><span></span></div>
+      <div><span>foo</span></div>
+      <div><span>foo</span></div>
+      <div><span>foo</span></div>
+      <div><span>foo</span></div>
+      <div><span></span></div>
+    </div>
+
+    <div id="graph">
+
+    </div>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

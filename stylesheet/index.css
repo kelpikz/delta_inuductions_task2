@@ -1,0 +1,135 @@
+#content {
+  /* width: 10px; */
+  display: none;
+}
+.chartName {
+  display: none;
+}
+
+#yAxisLabel {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+#yAxisLabel > div {
+  position: relative;
+  height: 100px;
+  width: 10%;
+}
+
+#yAxisLabel > div > span {
+  position: absolute;
+  border-top: dotted 2px rgba(0, 0, 0, 0.5);
+  height: inherit;
+  width: 50px;
+  font-size: 10px;
+  overflow-x: hidden;
+  border-right: 1em solid transparent;
+  text-overflow: ellipsis;
+}
+
+#yAxisLabel > div:first-of-type > span {
+  border: none;
+}
+
+#graph {
+  margin-left: 25%;
+  /* position: absolute; */
+  background-color: rgba(115, 220, 111, 0.2);
+  display: inline-block;
+  width: 90%;
+  height: 500px;
+  border: solid 1px black;
+  border-right: 0;
+  border-top: 0;
+}
+
+.singleGraph {
+  position: relative;
+  padding: 0px 10px;
+  display: inline-block;
+  height: 500px;
+  width: 50px;
+  border-right: dotted 2px rgba(0, 0, 0, 0.5);
+}
+
+.small {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: inherit;
+  background-color: rgba(115, 220, 111, 0.7);
+  text-align: center;
+  /* writing-mode: vertical-rl;
+  text-orientation: sideways; */
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  top: 102%;
+  margin: 0%;
+  padding: 0;
+}
+
+#newBarChart {
+  margin-bottom: 50px;
+  width: 50%;
+  min-width: 500px;
+}
+
+label {
+  width: fit-content;
+  display: block;
+  margin: 10px auto;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+tr th:nth-of-type(1) {
+  width: 14%;
+}
+tr th:nth-of-type(2),
+tr th:nth-of-type(3) {
+  width: 40%;
+}
+tr th:nth-of-type(4) {
+  width: 6%;
+}
+
+.danger,
+.create,
+.success {
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.danger {
+  background-color: red;
+}
+
+.create {
+  background-color: blue;
+}
+
+.success {
+  background-color: green;
+}
